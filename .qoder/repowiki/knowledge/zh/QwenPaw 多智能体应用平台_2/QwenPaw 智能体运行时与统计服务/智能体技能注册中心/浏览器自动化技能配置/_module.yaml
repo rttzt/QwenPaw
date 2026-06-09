@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry/browser_automation
+title: 浏览器自动化技能配置
+scope:
+    - src/qwenpaw/agents/skills/browser_cdp-en/
+    - src/qwenpaw/agents/skills/browser_visible-en/
+    - src/qwenpaw/agents/skills/browser_visible-zh/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/agents_runtime/skills_registry/communication_channels

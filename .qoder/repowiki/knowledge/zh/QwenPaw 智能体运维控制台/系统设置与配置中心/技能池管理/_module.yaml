@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/skill_pool
+title: 技能池管理
+scope:
+    - console/src/pages/Settings/SkillPool/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+    - path: qwenpaw

@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: qwenpaw/config_and_envs
+title: 配置管理与环境变量持久化
+scope:
+    - src/qwenpaw/config/
+    - src/qwenpaw/envs/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/environments
+    - path: qwenpaw/security
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/backup
+    - path: qwenpaw/cli

@@ -1,0 +1,18 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry/office_documents
+title: Office Documents Processing Skills
+scope:
+    - src/qwenpaw/agents/skills/docx-en/
+    - src/qwenpaw/agents/skills/docx-zh/
+    - src/qwenpaw/agents/skills/pdf-en/
+    - src/qwenpaw/agents/skills/pdf-zh/
+    - src/qwenpaw/agents/skills/pptx-en/
+    - src/qwenpaw/agents/skills/pptx-zh/
+    - src/qwenpaw/agents/skills/xlsx-en/
+    - src/qwenpaw/agents/skills/xlsx-zh/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_tools

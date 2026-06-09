@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: console/control_panel
+title: 系统控制与运维控制台
+scope:
+    - console/src/pages/Control/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/shared_frontend
+    - path: qwenpaw

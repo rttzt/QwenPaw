@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: console/control_panel/heartbeat
+title: 心跳配置管理
+scope:
+    - console/src/pages/Control/Heartbeat/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw

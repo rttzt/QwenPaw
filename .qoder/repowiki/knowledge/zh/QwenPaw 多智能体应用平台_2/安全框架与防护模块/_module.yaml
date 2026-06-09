@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/security
+title: 安全框架与防护模块
+scope:
+    - src/qwenpaw/security/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/security
+    - path: qwenpaw/config_and_envs
+    - path: qwenpaw/core_package
+    - path: qwenpaw/providers
+    - path: qwenpaw/cli

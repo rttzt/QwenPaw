@@ -1,0 +1,17 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/context_memory
+title: 智能体上下文与记忆管理
+scope:
+    - src/qwenpaw/agents/context/
+    - src/qwenpaw/agents/memory/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/agent_md_files
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_utils

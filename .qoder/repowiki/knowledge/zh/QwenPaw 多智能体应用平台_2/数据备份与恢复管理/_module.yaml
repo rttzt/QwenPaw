@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/backup
+title: 数据备份与恢复管理
+scope:
+    - src/qwenpaw/backup/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/backups
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/config_and_envs
+    - path: qwenpaw/cli

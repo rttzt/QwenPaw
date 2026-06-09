@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry/communication_channels
+title: 多通道通信与邮件集成技能
+scope:
+    - src/qwenpaw/agents/skills/channel_message-en/
+    - src/qwenpaw/agents/skills/dingtalk_channel-en/
+    - src/qwenpaw/agents/skills/himalaya-en/
+    - src/qwenpaw/agents/skills/himalaya-zh/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/agents_runtime/skills_registry/browser_automation

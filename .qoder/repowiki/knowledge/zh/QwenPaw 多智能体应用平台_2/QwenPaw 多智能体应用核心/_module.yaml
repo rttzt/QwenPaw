@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: qwenpaw/app_server
+title: QwenPaw 多智能体应用核心
+scope:
+    - src/qwenpaw/app/
+source_files: []
+depends_on: []
+related_to: []

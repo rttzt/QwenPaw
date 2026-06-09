@@ -1,0 +1,40 @@
+schema_version: 1
+module_path: qwenpaw/core_package
+title: 核心基础设施与配置管理
+scope:
+    - src/qwenpaw/__init__.py
+    - src/qwenpaw/__main__.py
+    - src/qwenpaw/__version__.py
+    - src/qwenpaw/constant.py
+    - src/qwenpaw/exceptions.py
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/cli
+    - path: deploy
+    - path: qwenpaw/plugins
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/app_server/workspace
+    - path: qwenpaw/agents_runtime/agent_stats
+    - path: qwenpaw/token_usage
+    - path: qwenpaw/agents_runtime/acp_integration
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/agents_runtime/agent_md_files
+    - path: qwenpaw/local_models
+    - path: qwenpaw/tunnel
+    - path: qwenpaw/security
+    - path: qwenpaw/backup
+    - path: qwenpaw/providers

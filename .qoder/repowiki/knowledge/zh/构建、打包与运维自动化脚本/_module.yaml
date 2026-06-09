@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: scripts
+title: 构建、打包与运维自动化脚本
+scope:
+    - scripts/
+source_files: []
+depends_on: []
+related_to:
+    - path: deploy
+    - path: qwenpaw/cli
+    - path: qwenpaw/core_utils

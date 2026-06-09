@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management/mcp
+title: MCP 客户端管理
+scope:
+    - console/src/pages/Agent/MCP/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

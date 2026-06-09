@@ -1,0 +1,55 @@
+schema_version: 1
+module_path: qwenpaw/core_utils
+title: 核心工具与基础设施模块
+scope:
+    - src/qwenpaw/utils/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/core_package
+    - path: qwenpaw/providers
+    - path: qwenpaw/backup
+    - path: qwenpaw/local_models
+    - path: qwenpaw/tunnel
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/agents_runtime/agent_stats
+    - path: qwenpaw/token_usage
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/app_server/workspace
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/runner
+    - path: console/settings_area/agent_stats
+    - path: console/settings_area/token_usage
+    - path: console/settings_area/security
+    - path: console/settings_area/backups
+    - path: console/settings_area/environments
+    - path: console/settings_area/models
+    - path: console/settings_area/agents
+    - path: console/agent_management/acp
+    - path: console/agent_management/mcp
+    - path: console/agent_management/skills
+    - path: console/agent_management/tools
+    - path: console/agent_management/workspace
+    - path: console/agent_management/config
+    - path: console/chat_interface
+    - path: console/control_panel/channels
+    - path: console/control_panel/cron_jobs
+    - path: console/control_panel/sessions
+    - path: qwenpaw/agents_runtime/acp_integration
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/agents_runtime/agent_md_files
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/plugins
+    - path: qwenpaw/config_and_envs
+    - path: qwenpaw/cli
+    - path: deploy
+    - path: scripts
+    - path: website
+    - path: console/shared_frontend

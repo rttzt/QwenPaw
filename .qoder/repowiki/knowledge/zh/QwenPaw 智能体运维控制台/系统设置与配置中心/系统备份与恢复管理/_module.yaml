@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/backups
+title: 系统备份与恢复管理
+scope:
+    - console/src/pages/Settings/Backups/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/backup
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

@@ -1,0 +1,20 @@
+schema_version: 1
+module_path: qwenpaw/app_server/routers
+title: API路由聚合与多智能体上下文管理
+scope:
+    - src/qwenpaw/app/routers/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/agents
+    - path: console/agent_management
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/app_server/workspace
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/app_server/channels/lightweight_adapters

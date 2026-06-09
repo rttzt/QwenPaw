@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: qwenpaw/plugins
+title: 插件系统核心
+scope:
+    - src/qwenpaw/plugins/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/shared_frontend
+    - path: qwenpaw/core_package
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/cli

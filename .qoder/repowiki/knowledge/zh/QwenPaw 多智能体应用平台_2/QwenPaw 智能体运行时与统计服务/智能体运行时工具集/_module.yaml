@@ -1,0 +1,19 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/agent_tools
+title: 智能体运行时工具集
+scope:
+    - src/qwenpaw/agents/tools/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/tools
+    - path: qwenpaw/agents_runtime/skills_registry/browser_automation
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/skills_registry/office_documents
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_md_files

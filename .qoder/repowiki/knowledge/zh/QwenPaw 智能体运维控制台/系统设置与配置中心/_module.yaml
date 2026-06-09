@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area
+title: 系统设置与配置中心
+scope:
+    - console/src/pages/Settings/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management
+    - path: console/shared_frontend
+    - path: qwenpaw

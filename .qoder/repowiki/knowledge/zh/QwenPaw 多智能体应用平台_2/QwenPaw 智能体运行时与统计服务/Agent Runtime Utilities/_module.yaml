@@ -1,0 +1,17 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/agent_utils
+title: Agent Runtime Utilities
+scope:
+    - src/qwenpaw/agents/utils/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/agents_runtime/skills_registry/office_documents
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_md_files
+    - path: qwenpaw/agents_runtime/agent_stats

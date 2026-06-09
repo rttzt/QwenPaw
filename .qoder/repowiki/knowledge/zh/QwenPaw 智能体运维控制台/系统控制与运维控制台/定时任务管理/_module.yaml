@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/control_panel/cron_jobs
+title: 定时任务管理
+scope:
+    - console/src/pages/Control/CronJobs/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

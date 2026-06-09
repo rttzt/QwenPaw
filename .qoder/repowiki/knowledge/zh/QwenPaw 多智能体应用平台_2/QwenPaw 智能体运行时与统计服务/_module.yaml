@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime
+title: QwenPaw 智能体运行时与统计服务
+scope:
+    - src/qwenpaw/agents/
+    - src/qwenpaw/agent_stats/
+source_files: []
+depends_on: []
+related_to: []

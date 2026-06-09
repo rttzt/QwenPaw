@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/token_usage
+title: Token Usage Analytics
+scope:
+    - console/src/pages/Settings/TokenUsage/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/token_usage
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

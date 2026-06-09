@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: qwenpaw/local_models
+title: 本地模型管理与推理后端
+scope:
+    - src/qwenpaw/local_models/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/providers
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/cli

@@ -1,0 +1,27 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/agent_core
+title: QwenPaw 智能体核心运行时
+scope:
+    - src/qwenpaw/agents/__init__.py
+    - src/qwenpaw/agents/command_handler.py
+    - src/qwenpaw/agents/model_factory.py
+    - src/qwenpaw/agents/prompt.py
+    - src/qwenpaw/agents/react_agent.py
+    - src/qwenpaw/agents/routing_chat_model.py
+    - src/qwenpaw/agents/schema.py
+    - src/qwenpaw/agents/skills_hub.py
+    - src/qwenpaw/agents/skills_manager.py
+    - src/qwenpaw/agents/templates.py
+    - src/qwenpaw/agents/tool_guard_mixin.py
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/config
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_md_files

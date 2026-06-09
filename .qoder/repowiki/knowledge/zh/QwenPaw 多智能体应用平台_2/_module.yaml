@@ -1,0 +1,32 @@
+schema_version: 1
+module_path: qwenpaw
+title: QwenPaw 多智能体应用平台
+scope:
+    - src/qwenpaw/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management
+    - path: console/chat_interface
+    - path: console/control_panel
+    - path: console/settings_area
+    - path: console/shared_frontend
+    - path: console/agent_management/acp
+    - path: console/agent_management/config
+    - path: console/agent_management/mcp
+    - path: console/agent_management/skills
+    - path: console/agent_management/tools
+    - path: console/agent_management/workspace
+    - path: console/control_panel/channels
+    - path: console/control_panel/cron_jobs
+    - path: console/control_panel/heartbeat
+    - path: console/control_panel/sessions
+    - path: console/settings_area/agent_stats
+    - path: console/settings_area/agents
+    - path: console/settings_area/backups
+    - path: console/settings_area/environments
+    - path: console/settings_area/models
+    - path: console/settings_area/security
+    - path: console/settings_area/skill_pool
+    - path: console/settings_area/token_usage
+    - path: console/settings_area/voice_transcription

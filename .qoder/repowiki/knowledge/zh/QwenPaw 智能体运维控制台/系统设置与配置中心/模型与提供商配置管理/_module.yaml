@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/models
+title: 模型与提供商配置管理
+scope:
+    - console/src/pages/Settings/Models/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/providers
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

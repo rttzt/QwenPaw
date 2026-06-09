@@ -1,0 +1,18 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry
+title: 智能体技能注册中心
+scope:
+    - src/qwenpaw/agents/skills/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/skills
+    - path: console/settings_area/skill_pool
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_md_files

@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/agent_stats
+title: Agent Statistics Service
+scope:
+    - src/qwenpaw/agent_stats/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/agent_stats
+    - path: qwenpaw/token_usage
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/agent_utils
+    - path: qwenpaw/agents_runtime/agent_md_files

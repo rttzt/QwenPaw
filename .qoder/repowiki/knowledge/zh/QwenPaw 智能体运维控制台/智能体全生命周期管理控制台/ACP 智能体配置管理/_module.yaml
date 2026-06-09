@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management/acp
+title: ACP 智能体配置管理
+scope:
+    - console/src/pages/Agent/ACP/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/acp_integration
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

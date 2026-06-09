@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/token_usage
+title: LLM Token Usage Tracking
+scope:
+    - src/qwenpaw/token_usage/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/token_usage
+    - path: qwenpaw/agents_runtime/agent_stats
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/cli

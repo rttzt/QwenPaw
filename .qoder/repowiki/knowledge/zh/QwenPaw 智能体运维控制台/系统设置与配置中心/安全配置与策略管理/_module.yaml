@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/security
+title: 安全配置与策略管理
+scope:
+    - console/src/pages/Settings/Security/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/security
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

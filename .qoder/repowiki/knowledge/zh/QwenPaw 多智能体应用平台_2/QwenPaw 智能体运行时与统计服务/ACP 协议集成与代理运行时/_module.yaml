@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/acp_integration
+title: ACP 协议集成与代理运行时
+scope:
+    - src/qwenpaw/agents/acp/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/acp
+    - path: qwenpaw/agents_runtime/skills_registry/agent_collaboration
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package

@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: qwenpaw/app_server/channels/voice
+title: Twilio 语音通话通道
+scope:
+    - src/qwenpaw/app/channels/voice/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/voice_transcription
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/tunnel
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/app_server/routers

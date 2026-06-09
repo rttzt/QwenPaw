@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/voice_transcription
+title: 语音转录配置管理
+scope:
+    - console/src/pages/Settings/VoiceTranscription/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw

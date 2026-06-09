@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management
+title: 智能体全生命周期管理控制台
+scope:
+    - console/src/pages/Agent/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw

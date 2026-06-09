@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/control_panel/channels
+title: 通讯渠道配置管理
+scope:
+    - console/src/pages/Control/Channels/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

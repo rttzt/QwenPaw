@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/agents
+title: 智能体配置与管理
+scope:
+    - console/src/pages/Settings/Agents/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

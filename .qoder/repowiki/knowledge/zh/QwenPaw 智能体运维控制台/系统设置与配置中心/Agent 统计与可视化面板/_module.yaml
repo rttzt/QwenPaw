@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/agent_stats
+title: Agent 统计与可视化面板
+scope:
+    - console/src/pages/Settings/AgentStats/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/agent_stats
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

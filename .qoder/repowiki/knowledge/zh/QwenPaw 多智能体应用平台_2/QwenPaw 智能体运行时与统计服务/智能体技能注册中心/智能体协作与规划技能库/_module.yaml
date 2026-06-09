@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry/agent_collaboration
+title: 智能体协作与规划技能库
+scope:
+    - src/qwenpaw/agents/skills/chat_with_agent-en/
+    - src/qwenpaw/agents/skills/chat_with_agent-zh/
+    - src/qwenpaw/agents/skills/multi_agent_collaboration-en/
+    - src/qwenpaw/agents/skills/multi_agent_collaboration-zh/
+    - src/qwenpaw/agents/skills/make_plan-en/
+    - src/qwenpaw/agents/skills/make_plan-zh/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/mission_execution
+    - path: qwenpaw/agents_runtime/acp_integration

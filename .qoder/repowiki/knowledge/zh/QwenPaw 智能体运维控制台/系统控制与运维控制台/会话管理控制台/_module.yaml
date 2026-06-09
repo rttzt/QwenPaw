@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/control_panel/sessions
+title: 会话管理控制台
+scope:
+    - console/src/pages/Control/Sessions/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

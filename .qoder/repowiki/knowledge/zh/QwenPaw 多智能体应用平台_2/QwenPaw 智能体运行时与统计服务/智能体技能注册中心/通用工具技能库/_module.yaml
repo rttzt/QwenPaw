@@ -1,0 +1,19 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/skills_registry/general_utilities
+title: 通用工具技能库
+scope:
+    - src/qwenpaw/agents/skills/QA_source_index-en/
+    - src/qwenpaw/agents/skills/QA_source_index-zh/
+    - src/qwenpaw/agents/skills/file_reader-en/
+    - src/qwenpaw/agents/skills/file_reader-zh/
+    - src/qwenpaw/agents/skills/guidance-en/
+    - src/qwenpaw/agents/skills/guidance-zh/
+    - src/qwenpaw/agents/skills/news-en/
+    - src/qwenpaw/agents/skills/news-zh/
+    - src/qwenpaw/agents/skills/cron-en/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry/office_documents
+    - path: qwenpaw/app_server/crons
+    - path: console/settings_area/skill_pool

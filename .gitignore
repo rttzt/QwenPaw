@@ -119,7 +119,11 @@ src/.hypothesis/
 .kiro/
 
 # Qoder IDE
-.qoder/
+.qoder/*
+# Training: 允许 rules / agents / repowiki 入库
+!.qoder/rules/
+!.qoder/agents/
+!.qoder/repowiki/
 
 # Cursor IDE
 .cursor/

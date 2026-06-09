@@ -1,0 +1,1169 @@
+# 知识卡导出索引文件
+schema_version: 1
+locale: zh-CN
+branch: main
+exported_at: "2026-06-06T05:25:28Z"
+modules:
+    "":
+        dir_name: QwenPaw 多智能体应用平台
+        title: QwenPaw 多智能体应用平台
+        scope:
+            - README.md
+            - pyproject.toml
+            - .dockerignore
+            - .flake8
+            - .gitattributes
+            - .gitignore
+            - .pre-commit-config.yaml
+            - .python-version
+            - CONTRIBUTING.md
+            - CONTRIBUTING_zh.md
+            - LICENSE
+            - Makefile
+            - README_ja.md
+            - README_ru.md
+            - README_zh.md
+            - SECURITY.md
+            - docker-compose.yml
+            - setup.py
+        source_files: []
+        children: []
+        depends_on: []
+        related_to: []
+    console:
+        dir_name: QwenPaw 智能体运维控制台
+        title: QwenPaw 智能体运维控制台
+        scope:
+            - console/
+        source_files: []
+        children:
+            - console/chat_interface
+            - console/settings_area
+            - console/shared_frontend
+            - console/agent_management
+            - console/control_panel
+        depends_on: []
+        related_to:
+            - path: qwenpaw/cli
+    console/agent_management:
+        dir_name: 智能体全生命周期管理控制台
+        title: 智能体全生命周期管理控制台
+        scope:
+            - console/src/pages/Agent/
+        source_files: []
+        children:
+            - console/agent_management/skills
+            - console/agent_management/tools
+            - console/agent_management/workspace
+            - console/agent_management/config
+            - console/agent_management/acp
+            - console/agent_management/mcp
+        depends_on: []
+        related_to:
+            - path: console/settings_area
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw
+    console/agent_management/acp:
+        dir_name: ACP 智能体配置管理
+        title: ACP 智能体配置管理
+        scope:
+            - console/src/pages/Agent/ACP/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/acp_integration
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/agent_management/config:
+        dir_name: 智能体配置管理
+        title: 智能体配置管理
+        scope:
+            - console/src/pages/Agent/Config/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/agent_management/mcp:
+        dir_name: MCP 客户端管理
+        title: MCP 客户端管理
+        scope:
+            - console/src/pages/Agent/MCP/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/agent_management/skills:
+        dir_name: 智能体技能管理
+        title: 智能体技能管理
+        scope:
+            - console/src/pages/Agent/Skills/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/agent_management/tools:
+        dir_name: 智能体工具管理
+        title: 智能体工具管理
+        scope:
+            - console/src/pages/Agent/Tools/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/agent_management/workspace:
+        dir_name: 智能体工作区文件管理
+        title: 智能体工作区文件管理
+        scope:
+            - console/src/pages/Agent/Workspace/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/workspace
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/chat_interface:
+        dir_name: 智能体对话交互界面
+        title: 智能体对话交互界面
+        scope:
+            - console/src/pages/Chat/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/control_panel:
+        dir_name: 系统控制与运维控制台
+        title: 系统控制与运维控制台
+        scope:
+            - console/src/pages/Control/
+        source_files: []
+        children:
+            - console/control_panel/heartbeat
+            - console/control_panel/cron_jobs
+            - console/control_panel/sessions
+            - console/control_panel/channels
+        depends_on: []
+        related_to:
+            - path: console/shared_frontend
+            - path: qwenpaw
+    console/control_panel/channels:
+        dir_name: 通讯渠道配置管理
+        title: 通讯渠道配置管理
+        scope:
+            - console/src/pages/Control/Channels/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/control_panel/cron_jobs:
+        dir_name: 定时任务管理
+        title: 定时任务管理
+        scope:
+            - console/src/pages/Control/CronJobs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/control_panel/heartbeat:
+        dir_name: 心跳配置管理
+        title: 心跳配置管理
+        scope:
+            - console/src/pages/Control/Heartbeat/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw
+    console/control_panel/sessions:
+        dir_name: 会话管理控制台
+        title: 会话管理控制台
+        scope:
+            - console/src/pages/Control/Sessions/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area:
+        dir_name: 系统设置与配置中心
+        title: 系统设置与配置中心
+        scope:
+            - console/src/pages/Settings/
+        source_files: []
+        children:
+            - console/settings_area/agents
+            - console/settings_area/models
+            - console/settings_area/token_usage
+            - console/settings_area/skill_pool
+            - console/settings_area/security
+            - console/settings_area/environments
+            - console/settings_area/agent_stats
+            - console/settings_area/voice_transcription
+            - console/settings_area/backups
+        depends_on: []
+        related_to:
+            - path: console/agent_management
+            - path: console/shared_frontend
+            - path: qwenpaw
+    console/settings_area/agent_stats:
+        dir_name: Agent 统计与可视化面板
+        title: Agent 统计与可视化面板
+        scope:
+            - console/src/pages/Settings/AgentStats/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_stats
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/agents:
+        dir_name: 智能体配置与管理
+        title: 智能体配置与管理
+        scope:
+            - console/src/pages/Settings/Agents/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/backups:
+        dir_name: 系统备份与恢复管理
+        title: 系统备份与恢复管理
+        scope:
+            - console/src/pages/Settings/Backups/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/backup
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/environments:
+        dir_name: 环境变量配置管理
+        title: 环境变量配置管理
+        scope:
+            - console/src/pages/Settings/Environments/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/config_and_envs
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/models:
+        dir_name: 模型与提供商配置管理
+        title: 模型与提供商配置管理
+        scope:
+            - console/src/pages/Settings/Models/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/providers
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/security:
+        dir_name: 安全配置与策略管理
+        title: 安全配置与策略管理
+        scope:
+            - console/src/pages/Settings/Security/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/security
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/skill_pool:
+        dir_name: 技能池管理
+        title: 技能池管理
+        scope:
+            - console/src/pages/Settings/SkillPool/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+            - path: qwenpaw
+    console/settings_area/token_usage:
+        dir_name: Token Usage Analytics
+        title: Token Usage Analytics
+        scope:
+            - console/src/pages/Settings/TokenUsage/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/token_usage
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    console/settings_area/voice_transcription:
+        dir_name: 语音转录配置管理
+        title: 语音转录配置管理
+        scope:
+            - console/src/pages/Settings/VoiceTranscription/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw
+    console/shared_frontend:
+        dir_name: 控制台共享前端基础设施
+        title: 控制台共享前端基础设施
+        scope:
+            - console/src/api/
+            - console/src/components/
+            - console/src/hooks/
+            - console/src/stores/
+            - console/src/utils/
+            - console/src/layouts/
+            - console/src/locales/
+            - console/src/contexts/
+            - console/src/plugins/
+            - console/src/constants/
+            - console/src/styles/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/plugins
+            - path: console/control_panel
+            - path: website
+            - path: console/settings_area
+            - path: qwenpaw/core_utils
+            - path: qwenpaw
+    deploy:
+        dir_name: 容器化部署与运行时编排
+        title: 容器化部署与运行时编排
+        scope:
+            - deploy/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: scripts
+            - path: qwenpaw/core_package
+            - path: qwenpaw/core_utils
+    qwenpaw:
+        dir_name: QwenPaw 多智能体应用平台_2
+        title: QwenPaw 多智能体应用平台
+        scope:
+            - src/qwenpaw/
+        source_files: []
+        children:
+            - qwenpaw/agents_runtime
+            - qwenpaw/app_server
+            - qwenpaw/config_and_envs
+            - qwenpaw/security
+            - qwenpaw/plugins
+            - qwenpaw/local_models
+            - qwenpaw/core_utils
+            - qwenpaw/tunnel
+            - qwenpaw/providers
+            - qwenpaw/token_usage
+            - qwenpaw/cli
+            - qwenpaw/core_package
+            - qwenpaw/backup
+        depends_on: []
+        related_to:
+            - path: console/agent_management
+            - path: console/chat_interface
+            - path: console/control_panel
+            - path: console/settings_area
+            - path: console/shared_frontend
+            - path: console/agent_management/acp
+            - path: console/agent_management/config
+            - path: console/agent_management/mcp
+            - path: console/agent_management/skills
+            - path: console/agent_management/tools
+            - path: console/agent_management/workspace
+            - path: console/control_panel/channels
+            - path: console/control_panel/cron_jobs
+            - path: console/control_panel/heartbeat
+            - path: console/control_panel/sessions
+            - path: console/settings_area/agent_stats
+            - path: console/settings_area/agents
+            - path: console/settings_area/backups
+            - path: console/settings_area/environments
+            - path: console/settings_area/models
+            - path: console/settings_area/security
+            - path: console/settings_area/skill_pool
+            - path: console/settings_area/token_usage
+            - path: console/settings_area/voice_transcription
+    qwenpaw/agents_runtime:
+        dir_name: QwenPaw 智能体运行时与统计服务
+        title: QwenPaw 智能体运行时与统计服务
+        scope:
+            - src/qwenpaw/agents/
+            - src/qwenpaw/agent_stats/
+        source_files: []
+        children:
+            - qwenpaw/agents_runtime/agent_md_files
+            - qwenpaw/agents_runtime/agent_core
+            - qwenpaw/agents_runtime/agent_tools
+            - qwenpaw/agents_runtime/agent_utils
+            - qwenpaw/agents_runtime/mission_execution
+            - qwenpaw/agents_runtime/context_memory
+            - qwenpaw/agents_runtime/agent_stats
+            - qwenpaw/agents_runtime/skills_registry
+            - qwenpaw/agents_runtime/acp_integration
+        depends_on: []
+        related_to: []
+    qwenpaw/agents_runtime/acp_integration:
+        dir_name: ACP 协议集成与代理运行时
+        title: ACP 协议集成与代理运行时
+        scope:
+            - src/qwenpaw/agents/acp/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/agent_management/acp
+            - path: qwenpaw/agents_runtime/skills_registry/agent_collaboration
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+    qwenpaw/agents_runtime/agent_core:
+        dir_name: QwenPaw 智能体核心运行时
+        title: QwenPaw 智能体核心运行时
+        scope:
+            - src/qwenpaw/agents/__init__.py
+            - src/qwenpaw/agents/command_handler.py
+            - src/qwenpaw/agents/model_factory.py
+            - src/qwenpaw/agents/prompt.py
+            - src/qwenpaw/agents/react_agent.py
+            - src/qwenpaw/agents/routing_chat_model.py
+            - src/qwenpaw/agents/schema.py
+            - src/qwenpaw/agents/skills_hub.py
+            - src/qwenpaw/agents/skills_manager.py
+            - src/qwenpaw/agents/templates.py
+            - src/qwenpaw/agents/tool_guard_mixin.py
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/agent_management/config
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_md_files
+    qwenpaw/agents_runtime/agent_md_files:
+        dir_name: Agent 人格与记忆模板管理
+        title: Agent 人格与记忆模板管理
+        scope:
+            - src/qwenpaw/agents/md_files/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_stats
+    qwenpaw/agents_runtime/agent_stats:
+        dir_name: Agent Statistics Service
+        title: Agent Statistics Service
+        scope:
+            - src/qwenpaw/agent_stats/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/agent_stats
+            - path: qwenpaw/token_usage
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_md_files
+    qwenpaw/agents_runtime/agent_tools:
+        dir_name: 智能体运行时工具集
+        title: 智能体运行时工具集
+        scope:
+            - src/qwenpaw/agents/tools/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/agent_management/tools
+            - path: qwenpaw/agents_runtime/skills_registry/browser_automation
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/skills_registry/office_documents
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_md_files
+    qwenpaw/agents_runtime/agent_utils:
+        dir_name: Agent Runtime Utilities
+        title: Agent Runtime Utilities
+        scope:
+            - src/qwenpaw/agents/utils/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/skills_registry/office_documents
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_md_files
+            - path: qwenpaw/agents_runtime/agent_stats
+    qwenpaw/agents_runtime/context_memory:
+        dir_name: 智能体上下文与记忆管理
+        title: 智能体上下文与记忆管理
+        scope:
+            - src/qwenpaw/agents/context/
+            - src/qwenpaw/agents/memory/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_md_files
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_utils
+    qwenpaw/agents_runtime/mission_execution:
+        dir_name: 任务执行与编排引擎
+        title: 任务执行与编排引擎
+        scope:
+            - src/qwenpaw/agents/mission/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry/agent_collaboration
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_md_files
+    qwenpaw/agents_runtime/skills_registry:
+        dir_name: 智能体技能注册中心
+        title: 智能体技能注册中心
+        scope:
+            - src/qwenpaw/agents/skills/
+        source_files: []
+        children:
+            - qwenpaw/agents_runtime/skills_registry/general_utilities
+            - qwenpaw/agents_runtime/skills_registry/office_documents
+            - qwenpaw/agents_runtime/skills_registry/agent_collaboration
+            - qwenpaw/agents_runtime/skills_registry/browser_automation
+            - qwenpaw/agents_runtime/skills_registry/communication_channels
+        depends_on: []
+        related_to:
+            - path: console/agent_management/skills
+            - path: console/settings_area/skill_pool
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_md_files
+    qwenpaw/agents_runtime/skills_registry/agent_collaboration:
+        dir_name: 智能体协作与规划技能库
+        title: 智能体协作与规划技能库
+        scope:
+            - src/qwenpaw/agents/skills/chat_with_agent-en/
+            - src/qwenpaw/agents/skills/chat_with_agent-zh/
+            - src/qwenpaw/agents/skills/multi_agent_collaboration-en/
+            - src/qwenpaw/agents/skills/multi_agent_collaboration-zh/
+            - src/qwenpaw/agents/skills/make_plan-en/
+            - src/qwenpaw/agents/skills/make_plan-zh/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/acp_integration
+    qwenpaw/agents_runtime/skills_registry/browser_automation:
+        dir_name: 浏览器自动化技能配置
+        title: 浏览器自动化技能配置
+        scope:
+            - src/qwenpaw/agents/skills/browser_cdp-en/
+            - src/qwenpaw/agents/skills/browser_visible-en/
+            - src/qwenpaw/agents/skills/browser_visible-zh/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/agents_runtime/skills_registry/communication_channels
+    qwenpaw/agents_runtime/skills_registry/communication_channels:
+        dir_name: 多通道通信与邮件集成技能
+        title: 多通道通信与邮件集成技能
+        scope:
+            - src/qwenpaw/agents/skills/channel_message-en/
+            - src/qwenpaw/agents/skills/dingtalk_channel-en/
+            - src/qwenpaw/agents/skills/himalaya-en/
+            - src/qwenpaw/agents/skills/himalaya-zh/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/agents_runtime/skills_registry/browser_automation
+    qwenpaw/agents_runtime/skills_registry/general_utilities:
+        dir_name: 通用工具技能库
+        title: 通用工具技能库
+        scope:
+            - src/qwenpaw/agents/skills/QA_source_index-en/
+            - src/qwenpaw/agents/skills/QA_source_index-zh/
+            - src/qwenpaw/agents/skills/file_reader-en/
+            - src/qwenpaw/agents/skills/file_reader-zh/
+            - src/qwenpaw/agents/skills/guidance-en/
+            - src/qwenpaw/agents/skills/guidance-zh/
+            - src/qwenpaw/agents/skills/news-en/
+            - src/qwenpaw/agents/skills/news-zh/
+            - src/qwenpaw/agents/skills/cron-en/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry/office_documents
+            - path: qwenpaw/app_server/crons
+            - path: console/settings_area/skill_pool
+    qwenpaw/agents_runtime/skills_registry/office_documents:
+        dir_name: Office Documents Processing Skills
+        title: Office Documents Processing Skills
+        scope:
+            - src/qwenpaw/agents/skills/docx-en/
+            - src/qwenpaw/agents/skills/docx-zh/
+            - src/qwenpaw/agents/skills/pdf-en/
+            - src/qwenpaw/agents/skills/pdf-zh/
+            - src/qwenpaw/agents/skills/pptx-en/
+            - src/qwenpaw/agents/skills/pptx-zh/
+            - src/qwenpaw/agents/skills/xlsx-en/
+            - src/qwenpaw/agents/skills/xlsx-zh/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_tools
+    qwenpaw/app_server:
+        dir_name: QwenPaw 多智能体应用核心
+        title: QwenPaw 多智能体应用核心
+        scope:
+            - src/qwenpaw/app/
+        source_files: []
+        children:
+            - qwenpaw/app_server/mcp
+            - qwenpaw/app_server/routers
+            - qwenpaw/app_server/crons
+            - qwenpaw/app_server/runner
+            - qwenpaw/app_server/channels
+            - qwenpaw/app_server/workspace
+        depends_on: []
+        related_to: []
+    qwenpaw/app_server/channels:
+        dir_name: 多通道消息接入与统一调度引擎
+        title: 多通道消息接入与统一调度引擎
+        scope:
+            - src/qwenpaw/app/channels/
+        source_files: []
+        children:
+            - qwenpaw/app_server/channels/core
+            - qwenpaw/app_server/channels/voice
+            - qwenpaw/app_server/channels/lightweight_adapters
+            - qwenpaw/app_server/channels/dingtalk
+            - qwenpaw/app_server/channels/sip
+        depends_on: []
+        related_to:
+            - path: console/control_panel/channels
+    qwenpaw/app_server/channels/core:
+        dir_name: 多通道消息接入与调度核心
+        title: 多通道消息接入与调度核心
+        scope:
+            - src/qwenpaw/app/channels/base.py
+            - src/qwenpaw/app/channels/manager.py
+            - src/qwenpaw/app/channels/registry.py
+            - src/qwenpaw/app/channels/command_registry.py
+            - src/qwenpaw/app/channels/unified_queue_manager.py
+            - src/qwenpaw/app/channels/renderer.py
+            - src/qwenpaw/app/channels/schema.py
+            - src/qwenpaw/app/channels/utils.py
+            - src/qwenpaw/app/channels/qrcode_auth_handler.py
+            - src/qwenpaw/app/channels/__init__.py
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/app_server/routers
+    qwenpaw/app_server/channels/dingtalk:
+        dir_name: 钉钉流式交互与消息通道
+        title: 钉钉流式交互与消息通道
+        scope:
+            - src/qwenpaw/app/channels/dingtalk/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/agents_runtime/skills_registry/communication_channels
+            - path: qwenpaw/agents_runtime/skills_registry/browser_automation
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/app_server/routers
+    qwenpaw/app_server/channels/lightweight_adapters:
+        dir_name: 多通道接入与消息路由引擎
+        title: 多通道接入与消息路由引擎
+        scope:
+            - src/qwenpaw/app/channels/console/
+            - src/qwenpaw/app/channels/discord_/
+            - src/qwenpaw/app/channels/feishu/
+            - src/qwenpaw/app/channels/imessage/
+            - src/qwenpaw/app/channels/matrix/
+            - src/qwenpaw/app/channels/mattermost/
+            - src/qwenpaw/app/channels/mqtt/
+            - src/qwenpaw/app/channels/onebot/
+            - src/qwenpaw/app/channels/qq/
+            - src/qwenpaw/app/channels/telegram/
+            - src/qwenpaw/app/channels/wecom/
+            - src/qwenpaw/app/channels/weixin/
+            - src/qwenpaw/app/channels/xiaoyi/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/app_server/routers
+    qwenpaw/app_server/channels/sip:
+        dir_name: SIP 语音通道与双模后端集成
+        title: SIP 语音通道与双模后端集成
+        scope:
+            - src/qwenpaw/app/channels/sip/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/core_utils
+            - path: console/settings_area/voice_transcription
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/tunnel
+    qwenpaw/app_server/channels/voice:
+        dir_name: Twilio 语音通话通道
+        title: Twilio 语音通话通道
+        scope:
+            - src/qwenpaw/app/channels/voice/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/voice_transcription
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/tunnel
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/app_server/routers
+    qwenpaw/app_server/crons:
+        dir_name: 定时任务调度与管理
+        title: 定时任务调度与管理
+        scope:
+            - src/qwenpaw/app/crons/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/control_panel/cron_jobs
+            - path: console/control_panel/heartbeat
+            - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/app_server/workspace
+    qwenpaw/app_server/mcp:
+        dir_name: MCP 客户端生命周期与热重载管理
+        title: MCP 客户端生命周期与热重载管理
+        scope:
+            - src/qwenpaw/app/mcp/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/agent_management/mcp
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/workspace
+    qwenpaw/app_server/routers:
+        dir_name: API路由聚合与多智能体上下文管理
+        title: API路由聚合与多智能体上下文管理
+        scope:
+            - src/qwenpaw/app/routers/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/agents
+            - path: console/agent_management
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/app_server/workspace
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+    qwenpaw/app_server/runner:
+        dir_name: Agent 运行时与会话管理
+        title: Agent 运行时与会话管理
+        scope:
+            - src/qwenpaw/app/runner/
+            - src/qwenpaw/app/approvals/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/chat_interface
+            - path: console/control_panel/sessions
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/app_server/workspace
+    qwenpaw/app_server/workspace:
+        dir_name: 智能体工作空间与服务生命周期管理
+        title: 智能体工作空间与服务生命周期管理
+        scope:
+            - src/qwenpaw/app/workspace/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/agent_management/workspace
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/mcp
+    qwenpaw/backup:
+        dir_name: 数据备份与恢复管理
+        title: 数据备份与恢复管理
+        scope:
+            - src/qwenpaw/backup/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/backups
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/config_and_envs
+            - path: qwenpaw/cli
+    qwenpaw/cli:
+        dir_name: QwenPaw CLI 命令行接口
+        title: QwenPaw CLI 命令行接口
+        scope:
+            - src/qwenpaw/cli/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console
+            - path: website
+            - path: qwenpaw/core_package
+            - path: scripts
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/config_and_envs
+            - path: qwenpaw/plugins
+            - path: qwenpaw/backup
+            - path: qwenpaw/security
+            - path: qwenpaw/local_models
+            - path: qwenpaw/token_usage
+            - path: qwenpaw/tunnel
+    qwenpaw/config_and_envs:
+        dir_name: 配置管理与环境变量持久化
+        title: 配置管理与环境变量持久化
+        scope:
+            - src/qwenpaw/config/
+            - src/qwenpaw/envs/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/environments
+            - path: qwenpaw/security
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/backup
+            - path: qwenpaw/cli
+    qwenpaw/core_package:
+        dir_name: 核心基础设施与配置管理
+        title: 核心基础设施与配置管理
+        scope:
+            - src/qwenpaw/__init__.py
+            - src/qwenpaw/__main__.py
+            - src/qwenpaw/__version__.py
+            - src/qwenpaw/constant.py
+            - src/qwenpaw/exceptions.py
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/cli
+            - path: deploy
+            - path: qwenpaw/plugins
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/app_server/routers
+            - path: qwenpaw/app_server/runner
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/app_server/workspace
+            - path: qwenpaw/agents_runtime/agent_stats
+            - path: qwenpaw/token_usage
+            - path: qwenpaw/agents_runtime/acp_integration
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/agent_md_files
+            - path: qwenpaw/local_models
+            - path: qwenpaw/tunnel
+            - path: qwenpaw/security
+            - path: qwenpaw/backup
+            - path: qwenpaw/providers
+    qwenpaw/core_utils:
+        dir_name: 核心工具与基础设施模块
+        title: 核心工具与基础设施模块
+        scope:
+            - src/qwenpaw/utils/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/core_package
+            - path: qwenpaw/providers
+            - path: qwenpaw/backup
+            - path: qwenpaw/local_models
+            - path: qwenpaw/tunnel
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/app_server/channels/dingtalk
+            - path: qwenpaw/app_server/channels/lightweight_adapters
+            - path: qwenpaw/agents_runtime/agent_stats
+            - path: qwenpaw/token_usage
+            - path: qwenpaw/app_server/mcp
+            - path: qwenpaw/app_server/workspace
+            - path: qwenpaw/app_server/crons
+            - path: qwenpaw/app_server/runner
+            - path: console/settings_area/agent_stats
+            - path: console/settings_area/token_usage
+            - path: console/settings_area/security
+            - path: console/settings_area/backups
+            - path: console/settings_area/environments
+            - path: console/settings_area/models
+            - path: console/settings_area/agents
+            - path: console/agent_management/acp
+            - path: console/agent_management/mcp
+            - path: console/agent_management/skills
+            - path: console/agent_management/tools
+            - path: console/agent_management/workspace
+            - path: console/agent_management/config
+            - path: console/chat_interface
+            - path: console/control_panel/channels
+            - path: console/control_panel/cron_jobs
+            - path: console/control_panel/sessions
+            - path: qwenpaw/agents_runtime/acp_integration
+            - path: qwenpaw/agents_runtime/context_memory
+            - path: qwenpaw/agents_runtime/mission_execution
+            - path: qwenpaw/agents_runtime/skills_registry
+            - path: qwenpaw/agents_runtime/agent_tools
+            - path: qwenpaw/agents_runtime/agent_utils
+            - path: qwenpaw/agents_runtime/agent_core
+            - path: qwenpaw/agents_runtime/agent_md_files
+            - path: qwenpaw/app_server/channels/core
+            - path: qwenpaw/plugins
+            - path: qwenpaw/config_and_envs
+            - path: qwenpaw/cli
+            - path: deploy
+            - path: scripts
+            - path: website
+            - path: console/shared_frontend
+    qwenpaw/local_models:
+        dir_name: 本地模型管理与推理后端
+        title: 本地模型管理与推理后端
+        scope:
+            - src/qwenpaw/local_models/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/providers
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/cli
+    qwenpaw/plugins:
+        dir_name: 插件系统核心
+        title: 插件系统核心
+        scope:
+            - src/qwenpaw/plugins/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/shared_frontend
+            - path: qwenpaw/core_package
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/cli
+    qwenpaw/providers:
+        dir_name: 多模态大模型提供商管理与适配层
+        title: 多模态大模型提供商管理与适配层
+        scope:
+            - src/qwenpaw/providers/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/models
+            - path: qwenpaw/local_models
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/security
+    qwenpaw/security:
+        dir_name: 安全框架与防护模块
+        title: 安全框架与防护模块
+        scope:
+            - src/qwenpaw/security/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/security
+            - path: qwenpaw/config_and_envs
+            - path: qwenpaw/core_package
+            - path: qwenpaw/providers
+            - path: qwenpaw/cli
+    qwenpaw/token_usage:
+        dir_name: LLM Token Usage Tracking
+        title: LLM Token Usage Tracking
+        scope:
+            - src/qwenpaw/token_usage/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: console/settings_area/token_usage
+            - path: qwenpaw/agents_runtime/agent_stats
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/cli
+    qwenpaw/tunnel:
+        dir_name: Cloudflare 隧道管理
+        title: Cloudflare 隧道管理
+        scope:
+            - src/qwenpaw/tunnel/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/app_server/channels/voice
+            - path: qwenpaw/core_utils
+            - path: qwenpaw/core_package
+            - path: qwenpaw/app_server/channels/sip
+            - path: qwenpaw/cli
+    scripts:
+        dir_name: 构建、打包与运维自动化脚本
+        title: 构建、打包与运维自动化脚本
+        scope:
+            - scripts/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: deploy
+            - path: qwenpaw/cli
+            - path: qwenpaw/core_utils
+    website:
+        dir_name: QwenPaw 官方网站与文档中心
+        title: QwenPaw 官方网站与文档中心
+        scope:
+            - website/
+        source_files: []
+        children: []
+        depends_on: []
+        related_to:
+            - path: qwenpaw/cli
+            - path: console/shared_frontend
+            - path: qwenpaw/core_utils

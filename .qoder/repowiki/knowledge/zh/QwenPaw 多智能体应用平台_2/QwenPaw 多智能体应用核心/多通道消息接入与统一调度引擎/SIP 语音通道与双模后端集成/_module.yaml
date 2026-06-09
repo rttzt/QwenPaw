@@ -1,0 +1,16 @@
+schema_version: 1
+module_path: qwenpaw/app_server/channels/sip
+title: SIP 语音通道与双模后端集成
+scope:
+    - src/qwenpaw/app/channels/sip/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/core_utils
+    - path: console/settings_area/voice_transcription
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/tunnel

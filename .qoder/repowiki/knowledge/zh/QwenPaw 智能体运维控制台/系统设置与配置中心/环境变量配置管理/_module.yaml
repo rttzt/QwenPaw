@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/settings_area/environments
+title: 环境变量配置管理
+scope:
+    - console/src/pages/Settings/Environments/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/config_and_envs
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

@@ -1,0 +1,27 @@
+schema_version: 1
+module_path: qwenpaw/app_server/channels/lightweight_adapters
+title: 多通道接入与消息路由引擎
+scope:
+    - src/qwenpaw/app/channels/console/
+    - src/qwenpaw/app/channels/discord_/
+    - src/qwenpaw/app/channels/feishu/
+    - src/qwenpaw/app/channels/imessage/
+    - src/qwenpaw/app/channels/matrix/
+    - src/qwenpaw/app/channels/mattermost/
+    - src/qwenpaw/app/channels/mqtt/
+    - src/qwenpaw/app/channels/onebot/
+    - src/qwenpaw/app/channels/qq/
+    - src/qwenpaw/app/channels/telegram/
+    - src/qwenpaw/app/channels/wecom/
+    - src/qwenpaw/app/channels/weixin/
+    - src/qwenpaw/app/channels/xiaoyi/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/app_server/routers

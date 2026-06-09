@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: qwenpaw/app_server/mcp
+title: MCP 客户端生命周期与热重载管理
+scope:
+    - src/qwenpaw/app/mcp/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/mcp
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/workspace

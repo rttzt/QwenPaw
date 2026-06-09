@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management/skills
+title: 智能体技能管理
+scope:
+    - console/src/pages/Agent/Skills/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

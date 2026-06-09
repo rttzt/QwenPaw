@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/chat_interface
+title: 智能体对话交互界面
+scope:
+    - console/src/pages/Chat/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

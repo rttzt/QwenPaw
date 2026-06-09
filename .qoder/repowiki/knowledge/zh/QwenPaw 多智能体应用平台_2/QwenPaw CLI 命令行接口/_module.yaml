@@ -1,0 +1,20 @@
+schema_version: 1
+module_path: qwenpaw/cli
+title: QwenPaw CLI 命令行接口
+scope:
+    - src/qwenpaw/cli/
+source_files: []
+depends_on: []
+related_to:
+    - path: console
+    - path: website
+    - path: qwenpaw/core_package
+    - path: scripts
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/config_and_envs
+    - path: qwenpaw/plugins
+    - path: qwenpaw/backup
+    - path: qwenpaw/security
+    - path: qwenpaw/local_models
+    - path: qwenpaw/token_usage
+    - path: qwenpaw/tunnel

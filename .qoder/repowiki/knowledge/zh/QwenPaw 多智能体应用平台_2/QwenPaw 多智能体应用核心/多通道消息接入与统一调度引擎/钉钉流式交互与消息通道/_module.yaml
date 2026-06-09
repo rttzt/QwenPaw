@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: qwenpaw/app_server/channels/dingtalk
+title: 钉钉流式交互与消息通道
+scope:
+    - src/qwenpaw/app/channels/dingtalk/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry/communication_channels
+    - path: qwenpaw/agents_runtime/skills_registry/browser_automation
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/app_server/channels/core
+    - path: qwenpaw/app_server/routers

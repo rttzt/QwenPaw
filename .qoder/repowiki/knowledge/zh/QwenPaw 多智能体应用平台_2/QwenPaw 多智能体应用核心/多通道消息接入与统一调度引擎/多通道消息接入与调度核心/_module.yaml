@@ -1,0 +1,23 @@
+schema_version: 1
+module_path: qwenpaw/app_server/channels/core
+title: 多通道消息接入与调度核心
+scope:
+    - src/qwenpaw/app/channels/base.py
+    - src/qwenpaw/app/channels/manager.py
+    - src/qwenpaw/app/channels/registry.py
+    - src/qwenpaw/app/channels/command_registry.py
+    - src/qwenpaw/app/channels/unified_queue_manager.py
+    - src/qwenpaw/app/channels/renderer.py
+    - src/qwenpaw/app/channels/schema.py
+    - src/qwenpaw/app/channels/utils.py
+    - src/qwenpaw/app/channels/qrcode_auth_handler.py
+    - src/qwenpaw/app/channels/__init__.py
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/channels/lightweight_adapters
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/app_server/channels/dingtalk
+    - path: qwenpaw/app_server/channels/sip
+    - path: qwenpaw/app_server/channels/voice
+    - path: qwenpaw/app_server/routers

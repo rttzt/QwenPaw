@@ -1,0 +1,17 @@
+schema_version: 1
+module_path: qwenpaw/app_server/runner
+title: Agent 运行时与会话管理
+scope:
+    - src/qwenpaw/app/runner/
+    - src/qwenpaw/app/approvals/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/chat_interface
+    - path: console/control_panel/sessions
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/app_server/workspace

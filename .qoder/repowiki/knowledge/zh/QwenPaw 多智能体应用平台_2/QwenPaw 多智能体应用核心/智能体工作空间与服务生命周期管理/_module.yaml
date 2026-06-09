@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: qwenpaw/app_server/workspace
+title: 智能体工作空间与服务生命周期管理
+scope:
+    - src/qwenpaw/app/workspace/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/agent_management/workspace
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/app_server/crons
+    - path: qwenpaw/app_server/mcp

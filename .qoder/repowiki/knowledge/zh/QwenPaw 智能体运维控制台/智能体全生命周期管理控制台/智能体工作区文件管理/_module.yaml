@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management/workspace
+title: 智能体工作区文件管理
+scope:
+    - console/src/pages/Agent/Workspace/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/app_server/workspace
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

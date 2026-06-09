@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: console/agent_management/tools
+title: 智能体工具管理
+scope:
+    - console/src/pages/Agent/Tools/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/core_utils
+    - path: qwenpaw

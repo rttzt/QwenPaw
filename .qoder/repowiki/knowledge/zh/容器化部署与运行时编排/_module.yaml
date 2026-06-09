@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: deploy
+title: 容器化部署与运行时编排
+scope:
+    - deploy/
+source_files: []
+depends_on: []
+related_to:
+    - path: scripts
+    - path: qwenpaw/core_package
+    - path: qwenpaw/core_utils

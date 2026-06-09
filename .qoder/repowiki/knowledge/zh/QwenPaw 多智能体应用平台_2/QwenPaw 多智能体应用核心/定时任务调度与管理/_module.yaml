@@ -1,0 +1,17 @@
+schema_version: 1
+module_path: qwenpaw/app_server/crons
+title: 定时任务调度与管理
+scope:
+    - src/qwenpaw/app/crons/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/control_panel/cron_jobs
+    - path: console/control_panel/heartbeat
+    - path: qwenpaw/agents_runtime/skills_registry/general_utilities
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/app_server/routers
+    - path: qwenpaw/app_server/runner
+    - path: qwenpaw/app_server/mcp
+    - path: qwenpaw/app_server/workspace

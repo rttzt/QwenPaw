@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: qwenpaw/providers
+title: 多模态大模型提供商管理与适配层
+scope:
+    - src/qwenpaw/providers/
+source_files: []
+depends_on: []
+related_to:
+    - path: console/settings_area/models
+    - path: qwenpaw/local_models
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/security

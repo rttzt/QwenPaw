@@ -1,0 +1,16 @@
+schema_version: 1
+module_path: qwenpaw/agents_runtime/mission_execution
+title: 任务执行与编排引擎
+scope:
+    - src/qwenpaw/agents/mission/
+source_files: []
+depends_on: []
+related_to:
+    - path: qwenpaw/agents_runtime/skills_registry/agent_collaboration
+    - path: qwenpaw/agents_runtime/agent_core
+    - path: qwenpaw/core_utils
+    - path: qwenpaw/core_package
+    - path: qwenpaw/agents_runtime/context_memory
+    - path: qwenpaw/agents_runtime/skills_registry
+    - path: qwenpaw/agents_runtime/agent_tools
+    - path: qwenpaw/agents_runtime/agent_md_files
